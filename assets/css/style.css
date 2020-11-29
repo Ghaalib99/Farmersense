@@ -891,20 +891,20 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Our Portfolio
+# Our product
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.product .product-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.product #product-flters {
   padding: 0;
   margin: 0 0 35px 0;
   list-style: none;
   text-align: center;
 }
 
-.portfolio #portfolio-flters li {
+.product #product-flters li {
   cursor: pointer;
   margin: 0 15px 15px 0;
   display: inline-block;
@@ -919,27 +919,27 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.product #product-flters li:hover, .product #product-flters li.filter-active {
   background: #428bca;
   color: #fff;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.product #product-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.product .product-wrap {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
   position: relative;
   overflow: hidden;
 }
 
-.portfolio .portfolio-wrap img {
+.product .product-wrap img {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.product .product-wrap .product-info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -956,19 +956,23 @@ section {
   padding-bottom: 30px;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.product .product-wrap .product-info h4 {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.product .product-wrap .product-info p {
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.portfolio .portfolio-wrap .portfolio-info a {
+.product-info p {
+  text-transform: lowercase !important;
+}
+
+.product .product-wrap .product-info a {
   color: #428bca;
   margin: 0 4px;
   font-size: 18px;
@@ -983,46 +987,46 @@ section {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info a:hover {
+.product .product-wrap .product-info a:hover {
   background: #428bca;
   color: #fff;
 }
 
-.portfolio .portfolio-wrap:hover {
+.product .product-wrap:hover {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.product .product-wrap:hover .product-info {
   opacity: 1;
   padding-bottom: 0;
 }
 
-.portfolio .portfolio-wrap:hover img {
+.product .product-wrap:hover img {
   transform: scale(1.1);
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# product Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.product-details {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-details-container {
+.product-details .product-details-container {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-carousel {
+.product-details .product-details-carousel {
   position: relative;
   z-index: 1;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.product-details .product-details-carousel .owl-nav, .product-details .product-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: left;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot {
+.product-details .product-details-carousel .owl-dot {
   display: inline-block;
   margin: 0 10px 0 0;
   width: 12px;
@@ -1031,11 +1035,11 @@ section {
   background-color: #ddd !important;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
+.product-details .product-details-carousel .owl-dot.active {
   background-color: #428bca !important;
 }
 
-.portfolio-details .portfolio-info {
+.product-details .product-info {
   padding: 30px;
   position: absolute;
   right: 0;
@@ -1045,7 +1049,7 @@ section {
   z-index: 2;
 }
 
-.portfolio-details .portfolio-info h3 {
+.product-details .product-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1053,36 +1057,36 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.product-details .product-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.product-details .product-info ul li + li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.product-details .product-description {
   padding-top: 50px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.product-details .product-description h2 {
   width: 50%;
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.product-details .product-description p {
   padding: 0 0 0 0;
 }
 
 @media (max-width: 768px) {
-  .portfolio-details .portfolio-description h2 {
+  .product-details .product-description h2 {
     width: 100%;
   }
-  .portfolio-details .portfolio-info {
+  .product-details .product-info {
     position: static;
     margin-top: 30px;
   }
